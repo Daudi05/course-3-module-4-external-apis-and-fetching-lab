@@ -27,9 +27,9 @@ document.addEventListener("DOMContentLoaded", () => {
         return response.json();
       })
       .then(data => {
-        console.log(data); // required by lab
+        console.log(data);
         displayAlerts(data);
-        stateInput.value = ""; // clear input
+        stateInput.value = "";
       })
       .catch(error => {
         console.log(error.message);
